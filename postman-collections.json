@@ -1,0 +1,149 @@
+{
+    "info": {
+        "_postman_id": "9bd4f8c5-8b32-4621-9fdf-9021795b8504",
+        "name": "Interview Books",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "Books",
+            "item": [
+                {
+                    "name": "/",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "{{url}}/books",
+                            "path": [
+                                "books"
+                            ],
+                            "host": [
+                                "{{url}}"
+                            ]
+                        },
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n    \"title\": \"The Great Gatsby\",\n    \"author\": \"F. Scott Fitzgerald\",\n    \"summary\": \"Set in the 1920s, 'The Great Gatsby' is a novel that delves into the opulent and decadent lifestyle of the Jazz Age. The story is narrated by Nick Carraway, who becomes a neighbor to the mysterious and wealthy Jay Gatsby. Gatsby is known for his extravagant parties and his obsession with Daisy Buchanan, a married woman he once loved. The novel explores themes of wealth, love, and the American Dream, while also revealing the hollowness of the Roaring Twenties' excesses.\"\n}\n"
+                        }
+                    }
+                },
+                {
+                    "name": "/",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "{{url}}/books",
+                            "query": [
+                                {
+                                    "key": "limit",
+                                    "value": "2",
+                                    "disabled": true
+                                },
+                                {
+                                    "key": "page",
+                                    "value": "2",
+                                    "disabled": true
+                                },
+                                {
+                                    "key": "search",
+                                    "value": "the",
+                                    "disabled": true
+                                },
+                                {
+                                    "key": "createdAtMin",
+                                    "value": "2023-11-06T09:47:59.048Z",
+                                    "disabled": true
+                                },
+                                {
+                                    "key": "createdAtMax",
+                                    "value": "2023-11-06T09:48:59.050Z",
+                                    "disabled": true
+                                },
+                                {
+                                    "key": "updatedAtMin",
+                                    "value": "2023-11-06T09:47:59.049Z",
+                                    "disabled": true
+                                },
+                                {
+                                    "key": "updatedAtMax",
+                                    "value": "2023-11-06T09:47:59.049",
+                                    "disabled": true
+                                }
+                            ],
+                            "variable": [],
+                            "path": [
+                                "books"
+                            ],
+                            "host": [
+                                "{{url}}"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "/:id",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "{{url}}/books/6548c00d7fe3edfd3547e47a",
+                            "path": [
+                                "books",
+                                "6548c00d7fe3edfd3547e47a"
+                            ],
+                            "host": [
+                                "{{url}}"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "/:id",
+                    "request": {
+                        "method": "PATCH",
+                        "url": {
+                            "raw": "{{url}}/books/6548c00d7fe3edfd3547e47a",
+                            "path": [
+                                "books",
+                                "6548c00d7fe3edfd3547e47a"
+                            ],
+                            "host": [
+                                "{{url}}"
+                            ]
+                        },
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n    \"title\": \"The Great Gatsby\",\n    \"author\": \"F. Scott Fitzgerald.\",\n    \"summary\": \"Set in the 1920s, 'The Great Gatsby' is a novel that delves into the opulent and decadent lifestyle of the Jazz Age. The story is narrated by Nick Carraway, who becomes a neighbor to the mysterious and wealthy Jay Gatsby. Gatsby is known for his extravagant parties and his obsession with Daisy Buchanan, a married woman he once loved. The novel explores themes of wealth, love, and the American Dream, while also revealing the hollowness of the Roaring Twenties' excesses\"\n}\n"
+                        }
+                    }
+                },
+                {
+                    "name": "/:id",
+                    "request": {
+                        "method": "DELETE",
+                        "url": {
+                            "raw": "{{url}}/books/6548c00d7fe3edfd3547e47a",
+                            "path": [
+                                "books",
+                                "6548c00d7fe3edfd3547e47a"
+                            ],
+                            "host": [
+                                "{{url}}"
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

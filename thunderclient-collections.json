@@ -1,0 +1,140 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Interview Books",
+    "dateExported": "2023-11-06T10:34:27.006Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "e37ce9b0-186b-4014-a3be-beeb2486bdb5",
+            "name": "Books",
+            "containerId": "",
+            "created": "2023-11-06T09:36:16.560Z",
+            "sortNum": 10000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "aff287c1-2958-4883-93ef-450ef59df1e4",
+            "colId": "066fad4c-4f98-4d60-ad4f-21583233e5ea",
+            "containerId": "e37ce9b0-186b-4014-a3be-beeb2486bdb5",
+            "name": "/",
+            "url": "{{url}}/books",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-11-06T09:36:20.831Z",
+            "modified": "2023-11-06T10:29:33.451Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"title\": \"The Great Gatsby\",\n    \"author\": \"F. Scott Fitzgerald\",\n    \"summary\": \"Set in the 1920s, 'The Great Gatsby' is a novel that delves into the opulent and decadent lifestyle of the Jazz Age. The story is narrated by Nick Carraway, who becomes a neighbor to the mysterious and wealthy Jay Gatsby. Gatsby is known for his extravagant parties and his obsession with Daisy Buchanan, a married woman he once loved. The novel explores themes of wealth, love, and the American Dream, while also revealing the hollowness of the Roaring Twenties' excesses.\"\n}\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "77f0302b-fda4-4d19-9e68-5fa1b2d2bf50",
+            "colId": "066fad4c-4f98-4d60-ad4f-21583233e5ea",
+            "containerId": "e37ce9b0-186b-4014-a3be-beeb2486bdb5",
+            "name": "/",
+            "url": "{{url}}/books",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-11-06T09:48:51.100Z",
+            "modified": "2023-11-06T10:33:22.279Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "limit",
+                    "value": "2",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "page",
+                    "value": "2",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "search",
+                    "value": "the",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "createdAtMin",
+                    "value": "2023-11-06T09:47:59.048Z",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "createdAtMax",
+                    "value": "2023-11-06T09:48:59.050Z",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "updatedAtMin",
+                    "value": "2023-11-06T09:47:59.049Z",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "updatedAtMax",
+                    "value": "2023-11-06T09:47:59.049",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "197895da-86d2-472c-aeeb-eaa6015a2d23",
+            "colId": "066fad4c-4f98-4d60-ad4f-21583233e5ea",
+            "containerId": "e37ce9b0-186b-4014-a3be-beeb2486bdb5",
+            "name": "/:id",
+            "url": "{{url}}/books/6548c00d7fe3edfd3547e47a",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-11-06T09:52:37.847Z",
+            "modified": "2023-11-06T10:32:25.133Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "f48cb866-e102-44a9-bc38-f91d6f499a4e",
+            "colId": "066fad4c-4f98-4d60-ad4f-21583233e5ea",
+            "containerId": "e37ce9b0-186b-4014-a3be-beeb2486bdb5",
+            "name": "/:id",
+            "url": "{{url}}/books/6548c00d7fe3edfd3547e47a",
+            "method": "PATCH",
+            "sortNum": 50000,
+            "created": "2023-11-06T09:53:30.408Z",
+            "modified": "2023-11-06T10:32:48.629Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"title\": \"The Great Gatsby\",\n    \"author\": \"F. Scott Fitzgerald.\",\n    \"summary\": \"Set in the 1920s, 'The Great Gatsby' is a novel that delves into the opulent and decadent lifestyle of the Jazz Age. The story is narrated by Nick Carraway, who becomes a neighbor to the mysterious and wealthy Jay Gatsby. Gatsby is known for his extravagant parties and his obsession with Daisy Buchanan, a married woman he once loved. The novel explores themes of wealth, love, and the American Dream, while also revealing the hollowness of the Roaring Twenties' excesses\"\n}\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "b97b18b5-ea3f-4849-b273-f41ce37d95ce",
+            "colId": "066fad4c-4f98-4d60-ad4f-21583233e5ea",
+            "containerId": "e37ce9b0-186b-4014-a3be-beeb2486bdb5",
+            "name": "/:id",
+            "url": "{{url}}/books/6548c00d7fe3edfd3547e47a",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2023-11-06T09:53:33.334Z",
+            "modified": "2023-11-06T10:33:03.804Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
